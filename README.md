@@ -1,7 +1,17 @@
 # Hacker News Daily Top 10 posts
 
-Daily: runs every day at 00:01 UTC
-Weekly: runs every monday at 00:01 UTC
+Subscribe via [RSS](), [GitHub](), or [email]()
+
+## Weekly & Monthly
+
+- [Hacker News Weekly]()
+- [Hacker News Monthly]()
+
+## How it works
+
+1. Daily top posts are stored in issues
+2. Scheduled script once a day grabs top posts on HN and opens an issue
+3. You can watch this repo to get updates
 
 ## TODO Before open source
 
