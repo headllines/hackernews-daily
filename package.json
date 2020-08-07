@@ -1,0 +1,27 @@
+{
+  "name": "hackernews",
+  "version": "1.0.0",
+  "description": "Hacker News Daily/Weekly/Monthly headlines",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/headllines/hackernews.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/headllines/hackernews/issues"
+  },
+  "homepage": "https://github.com/headllines/hackernews#readme",
+  "dependencies": {
+    "@octokit/auth-app": "^2.4.13",
+    "@octokit/core": "^3.1.2",
+    "axios": "^0.19.2",
+    "dayjs": "^1.8.32",
+    "timeago.js": "^4.0.2"
+  }
+}
