@@ -64,7 +64,7 @@ zx1Jq1AeM4+TceNXO9TRHHa5OC9iP08Wi451ZacHvZerJTDqwZf8DQ==
     await octokit.request('POST /repos/{owner}/{repo}/issues', {
       owner: 'headllines',
       repo: 'hackernews-daily',
-      title: `Hacker News Daily Top 10 之 ${date}`,
+      title: `Hacker News Daily Top 10 @${date}`,
       body: contents,
     })
   } catch (error) {
