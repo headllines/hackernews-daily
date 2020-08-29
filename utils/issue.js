@@ -1,30 +1,9 @@
-const axios = require('axios');
-const timeago = require('timeago.js');
 const { Octokit } = require("@octokit/core");
 const { createAppAuth } = require("@octokit/auth-app");
 
-/**
- * 1. Get top 10 stories on HN with most points in last 25 hours
- */
-module.exports = async (date) => {
-  // end of the date
-  const endTime = Math.round(new Date(date).getTime() / 1000) + (24 * 60 * 60);
-  // 1 hour before start of the date (save missed posts)
-  const startTime = Math.round(new Date(date).getTime() / 1000) - (1 * 60 * 60);
-  const res = await axios.get(`https://hn.algolia.com/api/v1/search?numericFilters=created_at_i>${startTime},created_at_i<${endTime}`);
-  const top10Objs = res.data.hits.slice(0, 10);
-  // console.log(top10Objs)
-  const contents = top10Objs
-    .map((obj, i) => {
-      const { title, created_at, url, author, points, objectID, num_comments } = obj;
-      return `${i + 1}. **[${title}](${url})**
-${points} points by [${author}](https://news.ycombinator.com/user?id=${author}) ${timeago.format(created_at)} | [${num_comments} comments](https://news.ycombinator.com/item?id=${objectID})
-
-`;
-    }).join('');
-
-  try {
-
+const open = async ({owner, repo, title, body}) => {
+  try {    
+    console.log('opening issue')
     const octokit = new Octokit({
       authStrategy: createAppAuth,
       auth: {
@@ -62,13 +41,17 @@ zx1Jq1AeM4+TceNXO9TRHHa5OC9iP08Wi451ZacHvZerJTDqwZf8DQ==
       },
     });
     await octokit.request('POST /repos/{owner}/{repo}/issues', {
-      owner: 'headllines',
-      repo: 'hackernews-daily',
-      title: `Hacker News Daily Top 10 @${new Date().toISOString().slice(0, 10)}`,
-      body: contents,
-    })
+      owner,
+      repo,
+      title,
+      body,
+    });
   } catch (error) {
-    console.error(error)
+    console.log(error);
+    throw error;
   }
 }
 
+module.exports = {
+  open,
+}
