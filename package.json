@@ -4,7 +4,7 @@
   "description": "Hacker News Daily/Weekly/Monthly headlines",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -u qunit --timeout 15000"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
     "axios": "^0.19.2",
     "dayjs": "^1.8.32",
     "timeago.js": "^4.0.2"
+  },
+  "devDependencies": {
+    "mocha": "^8.1.3"
   }
 }
