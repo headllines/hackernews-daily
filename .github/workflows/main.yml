@@ -19,3 +19,12 @@ jobs:
     - name: fetch
       run: node index.js
       working-directory: .
+      # for github app auth
+      env:
+        id: ${{ secrets.id }}
+        installationId: ${{ secrets.installationId }}
+        clientId: ${{ secrets.clientId }}
+        clientSecret: ${{ secrets.clientSecret }}
+        privateKey: ${{ secrets.privateKey }}
+        
+        
