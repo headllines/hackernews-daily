@@ -4,9 +4,9 @@
 
 ## How to subscribe
 
-Top posts are stored in [issues](https://github.com/headllines/hackernews-daily/issues), You can subscribe via [RSS](https://feeds.pub/feed/http%3A%2F%2Frsshub.app%2Fgithub%2Fissue%2Fheadllines%2Fhackernews-daily), or by [watching this repo](#how-does-it-work). 
+Top posts are stored in [issues](https://github.com/headllines/hackernews-daily/issues). You can subscribe via [RSS](https://feeds.pub/feed/http%3A%2F%2Frsshub.app%2Fgithub%2Fissue%2Fheadllines%2Fhackernews-daily), or by [watching this repo](#how-does-it-work). 
 
-Subscribe via email and other ways are still under development, you can join [the mailing list](https://headllines.com) to get notified.
+Email and other ways to subscirbe updates are still under development, you can join [the mailing list](https://headllines.com) to get notified.
 
 ## How does it work
 
