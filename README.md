@@ -15,6 +15,7 @@ Top posts are stored in [issues](https://github.com/headllines/hackernews-daily/
 - [Algolia](https://hn.algolia.com/) for the hacker news API
 - [RSSHub](https://github.com/diygod/rsshub) for generating RSS file from issues
 - [Feeds.Pub](https://feeds.pub) for hosting the RSS feed
+- [github-trending-repos](https://github.com/vitalets/github-trending-repos) for inspariation
 
 ## Related headline collectors
 
