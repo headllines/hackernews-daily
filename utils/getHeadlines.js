@@ -20,9 +20,14 @@ const getHeadlines = async (date) => {
 ${points} points by [${author}](https://news.ycombinator.com/user?id=${author}) ${timeago.format(created_at)} | [${num_comments} comments](https://news.ycombinator.com/item?id=${objectID})
 
 `;
-      }).join('');
+      })
+      .join('');
 
-    return contents;
+    
+    return `${contents}
+### Special sponsor
+<a href="https://bytebase.com/"> <img height="80px" src="https://i.v2ex.co/3VSATzOl.png" /> </a>    
+`;
   } catch (error) {
     console.log(error);
     throw error
