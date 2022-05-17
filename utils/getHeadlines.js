@@ -25,7 +25,7 @@ ${points} points by [${author}](https://news.ycombinator.com/user?id=${author}) 
 
     
     return `${contents}
-### <a href="https://github.com/sponsors/timqian"> Sponsor the author </a>    
+<p  align="right"><a href="https://github.com/sponsors/timqian"> <i>❤️ Sponsor the author</i></a> </p>
 `;
   } catch (error) {
     console.log(error);
