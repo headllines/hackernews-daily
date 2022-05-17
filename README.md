@@ -36,6 +36,12 @@ Email and other ways to subscribe updates are still under development, you can j
 
 We at [headllines.com](https://headllines.com) build open source headline collectors, if you are interested in writing an headline collector and join this orgnization, feel free to join our [telegram group](https://t.me/headllines)
 
+## Sponsors
+
+[琚致远](https://github.com/juzhiyuan) | [Bytebase](https://bytebase.com/) | [Madao](https://madao.me/) | [SecondState](https://bit.ly/3gfWwps)
+
+[Become a sponsor](https://github.com/sponsors/timqian)
+
 ## Authors
 
 - [timqian](https://github.com/timqian)
