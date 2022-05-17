@@ -25,8 +25,7 @@ ${points} points by [${author}](https://news.ycombinator.com/user?id=${author}) 
 
     
     return `${contents}
-### Special sponsor
-<a href="https://bytebase.com/"> <img height="80px" src="https://i.v2ex.co/3VSATzOl.png" /> </a>    
+### <a href="https://github.com/sponsors/timqian"> Sponsor the author </a>    
 `;
   } catch (error) {
     console.log(error);
