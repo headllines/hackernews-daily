@@ -1,0 +1,28 @@
+From 0622a411a25de09fa39fd67c69ccf699e36e2e0d Mon Sep 17 00:00:00 2001
+From: Bruno Kilian <bruno222@users.noreply.github.com>
+Date: Mon, 28 Dec 2020 01:41:48 +0100
+Subject: [PATCH] npm ci
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+If you use npm ci, you’ll get reliable builds.
+---
+ .github/workflows/main.yml | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/.github/workflows/main.yml b/.github/workflows/main.yml
+index 79aeb86..b27470d 100644
+--- a/.github/workflows/main.yml
++++ b/.github/workflows/main.yml
+@@ -13,8 +13,8 @@ jobs:
+       uses: actions/setup-node@v1
+       with:
+         node-version: 12.x
+-    - name: npm install
+-      run: npm install --only=prod
++    - name: npm ci
++      run: npm ci
+       working-directory: .
+     - name: fetch
+       run: node index.js
